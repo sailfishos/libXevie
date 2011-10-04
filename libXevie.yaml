@@ -1,0 +1,26 @@
+Name: libXevie
+Summary: X.Org X11 libXevie runtime library
+Description: X Event Interception Extension runtime Library
+Version: 1.0.3
+Release: 1
+Group: System/Libraries
+License: MIT
+URL: http://www.x.org
+Sources:
+    - ftp://ftp.x.org/pub/individual/lib/%{name}-%{version}.tar.bz2
+
+PkgConfigBR: 
+    - xproto
+    - xextproto
+    - evieproto
+    - xext
+    - x11
+PkgBR:
+    - pkgconfig
+SubPackages:
+    - Name: devel
+      Summary: X.Org X11 libXevie development package
+      Group: Development/Libraries
+      Description: X Event Interception Extension runtime development files
+      RequiresPre:
+          - xorg-x11-filesystem >= 0.99.2-3

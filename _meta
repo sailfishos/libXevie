@@ -1,0 +1,8 @@
+<package project="Mer:Trunk:Base" name="libXevie">
+  <title>X.Org X11 libXevie runtime library</title>
+  <description>X.Org X11 libXevie runtime library
+
+
+</description>
+  <url>http://www.x.org</url>
+</package>
